@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.master {
+margin-top:1px;
+margin-left:1px;
+overflow: hidden;
+padding: 32.60%;
+
+}
+
+#resp-iframe{
+border-radius:14px
+position:absolute;
+top: 0;
+left:0;
+height:400px;
+width:663px;
+}
+#clywlogo{
+     margin-top:-2%;
+	 margin-left: 0%;
+	 height: 45px;
+	 width:45px;
+	 }
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+#topbar{ 
+    height:48px;
+	width:inherit;
+	color: red;
+	}
+	
+	
+#dragonballZ { 
+background: url("http://www.vincentwee.com/wp-content/uploads/2015/12/g-dots.gif") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+</style>
+ 
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large" id="topbar">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+   
+   <p><img src="https://i.pinimg.com/originals/d8/e8/a0/d8e8a0ef998f2bf2761f63b9938a107e.jpg" id="clywlogo"/> abdiel carino borrero &nbsp; #Y00551133  &nbsp; departamento de informatica</p>
+   
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="cssresume.html" target="ventana">Resumen CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="list.html" target="ventana">Bosquejo del curso en CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="forms.html" target="ventana">Formas CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="CSSTABLE.html" target="ventana">Tabla de temp en CSS</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="video1.html"target="ventana">HTML</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="video2.html"target="ventana">JavaScript</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="video3.html"target="ventana">CSS</a>
+ 
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px" id="dragonballZ">
+  <div class="w3-row w3-padding-64">
+  <h1>welcome to my webpage</h1>
+    <div class="w3-twothird w3-container">
+  
+   <div class="resp-iframe">
+    <iframe id="resp-iframe" name="ventana"></iframe>
+	
+</div>
+</div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">HTML</h1>
+      <p>Hypertext markup language (HTML) is the major markup language used to display Web pages on the Internet. In other words, Web pages are composed of HTML, which is used to display text, images or other resources through a Web browser.</p>
+    </div>
+   
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">JavaScript</h1>
+      <p>JavaScript is a programming language commonly used in web development. It was originally developed by Netscape as a means to add dynamic and interactive elements to websites. While JavaScript is influenced by Java, the syntax is more similar to C and is based on ECMAScript, a scripting language developed by Sun Microsystems..</p>
+    </div>
+  
+  </div>
+
+<div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">CSS</h1>
+      <p>Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.</p>
+    </div>
+  
+  </div>
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+    
+      <a class="w3-button w3-black" href="CSSblueprint.html">1</a>
+      <a class="w3-button w3-hover-black" href="video1.html">2</a>
+      <a class="w3-button w3-hover-black" href="video2.html">3</a>
+      <a class="w3-button w3-hover-black" href="video3.html">4</a>
+    </div>
+  </div>
+
+ <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>information contact</h4>
+	  <h5>abdielbaez766@gmail.com</h5>
+	  <a href="https://github.com/acarino1133/proyecto/" target="_blank">https://github.com/acarino1133/proyecto/</a>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

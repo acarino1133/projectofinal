@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #7FFF00}
+tr:nth-child(odd){background-color: #FF0000}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+h2{
+color:blue;
+}
+</style>
+</head>
+<body>
+
+
+
+<table>
+  <STYLE type="text/css">
+tr#mytr {font-style: italic; color: white}
+tr#mytr {font-style: bold; color: red; background-color: lightblue}
+</STYLE>
+</HEAD>
+<body>
+<h2>Conversion de Temperatura</h2>
+<p id="demo"></p>
+<script>
+function fahrenheit(c){ return 9/5*c + 32;}
+function kelvin(c){ return c + 273.15;}
+function rankine(c){ return 9/5*c + 491.67;}
+function reaumur(c){ return 4/5*c;}
+var temp = ["Celsius", "Fahrenheit", "Kelvin", "Rankine", "Reaumur", "Estado del Agua"];
+var text = "<table border = 1 >";
+var i, c;
+for (i = 0; i < temp.length; i++){
+text += "<th id=myth>" + temp[i] + "</th>";
+}
+for(c=-273; c<=200; c += 10)
+{ if(c==0 || c== 100)
+text += "<tr id=mytr bgcolor=green ><td>" + c + "</td><td>" +fahrenheit(c)+"</td><td>"+kelvin(c)+"</td><td>"+rankine(c)+"</td><td>"+reaumur(c)+"</td></tr>";
+else
+text += "<tr><td>" + c + "</td><td>" +fahrenheit(c)+"</td><td>"+kelvin(c)+"</td><td>"+rankine(c)+"</td><td>"+reaumur(c)+"</td></tr>";
+}
+document.getElementById("demo").innerHTML = text + "</tables>";
+</script>
+</body>
+</html>
+
+</table>
+
+</body>
+</html>
